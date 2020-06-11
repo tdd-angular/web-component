@@ -1,8 +1,6 @@
 # Web component
 
-> This repo will show you several examples about how Web component works.
-
-
+> This repository will show you several examples about how Web component works.
 
 # Introduction
 
@@ -47,27 +45,24 @@ You can define several different callbacks inside a custom element's class defin
 
 ## Tutorial
 
-- https://indepth.dev/angular-web-components-a-complete-guide/
+- [angular-web-components-a-complete-guide](https://indepth.dev/angular-web-components-a-complete-guide/)
 
 Ivy improvement:
 
-- https://indepth.dev/building-and-bundling-web-components/
+- [building-and-bundling-web-components](https://indepth.dev/building-and-bundling-web-components/)
 
 Other examples:
 
-https://coryrylan.com/blog/using-web-components-in-angular
-
+- [using-web-components-in-angular](https://coryrylan.com/blog/using-web-components-in-angular)
 
 
 > Thanks to the [Custom Elements](https://html.spec.whatwg.org/multipage/scripting.html#custom-elements) spec which is implemented in modern browsers, web developers can **create their own HTML tags**, improve and customize the existing HTML tags, or build reusable components that can be used in vanilla JavaScript or in other libraries or frameworks like Angular 9, React or Vue etc.
 
-# Motivation
-
 ## Sources
 
-- https://developer.mozilla.org/en-US/docs/Web/Web_Components;
-- https://indepth.dev/building-and-bundling-web-components/;
-- https://www.techiediaries.com/angular/angular-9-web-components-custom-elements-shadow-dom/;
-- https://coryrylan.com/blog/using-web-components-in-angular;
-- https://developers.google.com/web/fundamentals/web-components/customelements.
+- [MDN Web_Components]('https://developer.mozilla.org/en-US/docs/Web/Web_Components);
+- [building-and-bundling-web-components](https://indepth.dev/building-and-bundling-web-components/);
+- [angular-9-web-components-custom-elements-shadow-dom](https://www.techiediaries.com/angular/angular-9-web-components-custom-elements-shadow-dom/);
+- [using-web-components-in-angular](https://coryrylan.com/blog/using-web-components-in-angular);
+- [customelements](https://developers.google.com/web/fundamentals/web-components/customelements).
 
