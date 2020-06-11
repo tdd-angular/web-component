@@ -27,6 +27,24 @@ The basic approach for implementing a web component generally looks something li
 4. If required, define an HTML template using [` and [``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot). Again use regular DOM methods to clone the template and attach it to your shadow DOM.
 5. Use your custom element wherever you like on your page, just like you would any regular HTML element.
 
+## Using the lifecycle callbacks
+
+You can define several different callbacks inside a custom element's class definition, which fire at different points in the element's lifecycle:
+
+- ```
+  connectedCallback
+  ```
+
+  : Invoked each time the custom element is appended into a document-connected element. This will happen each time the node is moved, and may happen before the element's contents have been fully parsed.
+
+  **Note**: `connectedCallback` may be called once your element is no longer connected, use [`Node.isConnected`](https://developer.mozilla.org/en-US/docs/Web/API/Node/isConnected) to make sure.
+
+- `disconnectedCallback`: Invoked each time the custom element is disconnected from the document's DOM.
+
+- `adoptedCallback`: Invoked each time the custom element is moved to a new document.
+
+- `attributeChangedCallback`: Invoked each time one of the custom element's attributes is added, removed, or changed. Which attributes to notice change for is specified in a static get `observedAttributes` method
+
 ## Tutorial
 
 - https://indepth.dev/angular-web-components-a-complete-guide/
@@ -47,8 +65,9 @@ https://coryrylan.com/blog/using-web-components-in-angular
 
 ## Sources
 
-- https://developer.mozilla.org/en-US/docs/Web/Web_Components
-- https://indepth.dev/building-and-bundling-web-components/
-- https://www.techiediaries.com/angular/angular-9-web-components-custom-elements-shadow-dom/
-- https://coryrylan.com/blog/using-web-components-in-angular
+- https://developer.mozilla.org/en-US/docs/Web/Web_Components;
+- https://indepth.dev/building-and-bundling-web-components/;
+- https://www.techiediaries.com/angular/angular-9-web-components-custom-elements-shadow-dom/;
+- https://coryrylan.com/blog/using-web-components-in-angular;
+- https://developers.google.com/web/fundamentals/web-components/customelements.
 
